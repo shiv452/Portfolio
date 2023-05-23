@@ -47,7 +47,7 @@ I value open communication, collaboration, and continuous learning. GitHub is no
 Thank you for visiting my profile, and I look forward to connecting with you!
 
 
-## 🔗 Links
+# 🔗 Links
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shiv452.github.io/Portfolio/)
 
