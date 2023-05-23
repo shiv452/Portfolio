@@ -1,4 +1,3 @@
-
 # Welcome to Portfolio!
 
 Hello there! Welcome to my GitHub repository showcasing my portfolio. Here, you'll find a collection of my projects, achievements, and experiences. I'm excited to share my journey as a developer and demonstrate my skills and passion for coding.
@@ -56,4 +55,18 @@ Thank you for visiting my profile, and I look forward to connecting with you!
 [![CodePen](https://img.shields.io/badge/codepen-0A66C2?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/shivamgoyal452)
 
 [![Instagram](https://img.shields.io/badge/instagram-0A66C2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/shivamgoyal452gmail.com_/)
+
+# 🫧 Demo - Website Pic
+
+![1-1](https://github.com/shiv452/Portfolio/assets/48632755/bce293aa-3d42-45b6-8a4e-21216b540937)
+![2-1](https://github.com/shiv452/Portfolio/assets/48632755/8046a3a7-c642-4164-938b-e86c13622cee)
+![3-1](https://github.com/shiv452/Portfolio/assets/48632755/5995320c-37ce-4e56-aba4-dbe21372c71c)
+![4-1](https://github.com/shiv452/Portfolio/assets/48632755/c2736c7c-f43a-4036-8127-a4d93d94ab7d)
+![5-1](https://github.com/shiv452/Portfolio/assets/48632755/74b31821-e7db-4cdd-97ee-5f94987e45b8)
+
+
+
+
+
+
 
