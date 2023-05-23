@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/********* Styling the Home Section *************/
+
+#header {
+    background-image: url('butterfly-ga9c9f1d3a_1920.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Apple Chancery';
+}
+
+.color {
+    color: yellow;
+}
+
+.container-nav {
+    padding: 20px 8%;
+}
+
+.logo {
+    position: relative;
+    width: 10px;
+    border: 10px;
+    border-radius: 50%;
+    width: 90px;
+    box-shadow: -1px -1px 10px white;
+    right: 550px;
+}
+
+    /******** Navigation Styling ************/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 190px;
+}
+
+nav .fa-solid, nav p {
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 28px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 1.4vw;
+    border: 10px;
+    box-shadow: 5px 6px 10px black;
+    border-radius: 90%;
+}
+
+nav ul li a span {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, red, rgba(255, 255, 255, 0), blue, rgba(255,225,225, 0));
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+/*---------------- End Navigation Styling ---------------*/
+
+/******** Header Text Styling in Menu section **********/
+.header-text {
+    margin-top: 250px;
+}
+
+.header-text p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.underscore_color {
+    color: yellow;
+    animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0% {
+    opacity: 1;
+    color: skyblue;
+    }
+    50% {
+    opacity: 0.5;
+    color: skyblue;
+    }
+    100% {
+    opacity: 1;
+    color: skyblue;
+    }
+}
+
+.text-background-color {
+    background-color: skyblue;
+    color: black;
+    padding: 6px;
+    margin: 20px;
+    border-radius: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% {
+    transform: rotate(0deg);
+    }
+    20% {
+    transform: rotateX(30deg);
+    }
+    40% {
+    transform: rotateX(60deg);
+    }
+    60% {
+    transform: rotateX(90deg);
+    }
+    100% {
+    transform: rotateX(0deg);
+    }
+}
+
+/*--------------- End Home Styling Section ---------------------*/
+
+
+
+
+/************* About Section Styling **************/
+
+#about {
+    background: linear-gradient(60deg, rgb(50, 180, 232) 30%, rgb(215, 104, 240) 60%, rgb(118, 207, 236) 90%, rgba(60, 188, 224, 0.761) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#about .container-about .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 35%;
+    border-radius: 17px;
+    margin-left: 15px;
+}
+
+.about-col-1 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 170px;
+    margin-top: 90px;
+    border: 10px;
+    box-shadow: 5px 9px 50px white;
+}
+
+.sub-title {
+    font-size: 20vh;
+    color: white;
+}
+
+.about-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.about-col-2 p {
+    font-size: 20px;
+}
+
+.about-col-2 ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.about-col-2 ul li {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    background: linear-gradient(70deg , rgb(213, 241, 5) 40%, rgba(11, 234, 219, 0.869) 60%, rgb(68, 48, 220) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-col-2 ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, skyblue 20%, white 50%, orange 100%);
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: width 0.5s;
+}
+
+.about-col-2 ul li:hover::after {
+    width: 50%;
+}
+
+.about-col-2 ul li.active-link::after {
+    width: 100%;
+}
+
+.tab-contents {
+    margin-top: 20px;
+    display: none;
+}
+
+.tab-contents h3 {
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px whitesmoke;
+}
+
+.tab-contents p {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tab-contents.active-tab {
+    display: block;
+    color: whitesmoke;
+}
+
+.bg-color {
+    display: inline-block;
+    background: linear-gradient(20deg, rgb(34, 234, 201) 10%, orange 50%, yellow 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 10px;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+    margin-right: 200px;
+    font-style: bold;
+}
+
+/*----------- End About Section Styling ---------------------*/
+
+
+
+
+/*************** My Project Styling ********************************/
+
+#project {
+    background: linear-gradient(to top, orange 10%, blue 50%, black 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    color: #ffffff;
+    font-size: 9vw;
+    margin-left: 490px;
+}
+
+.pj_color {
+    color: yellow;
+}
+.container-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 80px 100px 10px; /*top right bottom left*/
+    transition: 0.4s;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50px;
+    border-radius: 10px;
+    transform: skewX(15deg);
+    transition: 0.4s;
+}
+
+.card::after {
+    filter: blur(30px);
+}
+
+.card:hover::before,
+.card:hover::after {
+    transform: skewX(0);
+    left: 20px;
+    width: calc(100% - 80px);
+}
+
+.card:nth-child(1)::before,
+.card:nth-child(1)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.card:nth-child(2)::before,
+.card:nth-child(2)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.card:nth-child(3)::before,
+.card:nth-child(3)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.card:nth-child(4)::before,
+.card:nth-child(4)::after {
+    background: linear-gradient(315deg, #c8128b, #24ccdb);
+}
+
+.card span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card span::before,
+.card span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card:hover span::before {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    left: 50px;
+    top: -50px;
+    animation: swing 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover span::after {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    right: 50px;
+    bottom: -50px;
+    animation: swing 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation-delay: -1s;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    left: 0;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px 50px;
+    transition: 0.4s;
+    color: white;
+}
+
+.card:hover .content {
+    left: -25px;
+    padding: 40px 50px;
+}
+
+.card h2 {
+    font-size: 1.9em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: #222;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes swing {
+    0% {
+    transform: translateY(10px);
+    }
+
+    50% {
+    transform: translateY(-10px);
+    }
+
+    100% {
+    transform: translateY(10px);
+    }
+}
+
+/*------------- End My Project Section Styling ---------------------*/
+
+
+
+
+/******************* Contact Section Styling ***************/
+
+#contact {
+    background: linear-gradient(30deg, skyblue 10%, rgb(194, 90, 205) 50%, rgb(180, 34, 9) 100%);
+}
+
+.row-contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.contact-left {
+    position: relative;
+    margin: 0px 850px 5px 80px; /*(top right bottom left);*/
+}
+
+.phone-color {
+    color: green;
+}
+/*--------- Form Styling Section -------*/
+.contact-left form {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 145px;
+    position: relative;
+}
+
+.contact-left input,
+.contact-left textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 10px 20px;
+    border: 2px solid #a95cc0;
+    font-family: 'Time New Roman', cursive; /* Replace 'Horror Font' with your desired horror font */
+    color: #ffffff; /* Set text color */
+    background-color: #2b2b2b; /* Set input background color */
+}
+
+.contact-left input[type="submit"] {
+    background-color: #4138a6;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    border-radius: 20px 100px;
+    border: 1px solid #f507f5;
+    transition: color 0.5s, background-color 0.5s;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 8px 35px;
+    font-family: 'Horror Font', cursive; /* Replace 'Horror Font' with your desired horror font */
+}
+
+.contact-left form input[type="submit"]:hover {
+    background-color: transparent;
+    color: #ee0a38;
+}
+
+/*------------ End Form Section Styling ------*/
+
+/*---------- Contact Section Styling ----------*/
+
+.contact-right {
+    position: absolute;
+    margin: 100px 900px 400px 90px; /*(top right bottom left);*/
+}
+
+.contact-sub-title {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    font-size: 5em;
+    position: relative;
+    margin: 0 -190px 60px 0;
+    /* -----Color Cover in text code-----
+    text-transform: uppercase;
+    background: linear-gradient(to right, #d4d9da 10%, #62b4da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    color: #ffffff;
+}
+
+.contact-right p{
+    font-family: 'Time New Roman', cursive;
+    position: relative;
+    margin-left: 1200px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.bg_color {
+    display: inline-block;
+    color: #000000;
+    padding: 3px;
+    border-radius: 5px;
+    font-style: bold;
+}
+
+.contact-right ul {
+    list-style: none;
+}
+
+.contact-right ul li {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Time New Roman', cursive;
+}
+
+/*--------------- End Contact Section Styling --------------*/
+
+
+
+
+
+/**************** Footer Section Styling ****************/
+.footer-container {
+    position: relative;
+    background: linear-gradient(-140deg, green 40%, white 50%, orange  80%);
+    color: black;
+    font-family: 'Time New Roman', cursive;
+    animation: slide 4s ease-out;
+    padding: 5px;
+}
+
+.footer-container p{
+    margin-left: calc(40% - 100px);
+    font-style: italic;
+    font-display: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    width: fit-content;
+}
+/*
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+*/
+
+.footer_color {
+    color: lightseagreen;
+}
+/*------------ End Footer Section Styling ---------------*/
+
+
+
+
+/* ------------------- CSS For Mobile Screens ------------------- */
+
+@media screen and (max-width: 890px) {
+    #header nav ul li a .color {
+        color: rgb(169, 95, 95);
+    }
+
+#header {
+    background-image: url('/butterfly-ga9c9f1d3a_1920.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav ul {
+    position: absolute;
+    top: 0px;
+    right: -290px;
+    height: 100vh;
+    width: 40%;
+    background: rgb(67, 231, 200);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    z-index: 4;
+}
+
+nav ul .fas {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.5s;
+}
+
+nav ul .fas:hover {
+    color: black;
+}
+nav .fas, nav p {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+nav ul li a {
+    transition: color 0.5s;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.header-text {
+    margin-top: 250px;
+}
+
+.header-text p {
+    font-size: 27px;
+}
+
+.header-text h1 {
+    font-size: 45px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .sub-title {
+        font-size: 40px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .header-text {
+        margin-top: 250px;
+    }
+
+    .header-text p {
+        font-size: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    /*------------------- About ---------------- */
+    #about .container-about .row {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .about-col-1 {
+        width: 20%;
+    }
+    }
+
+    /*------------------- Contact Section ---------------- */
+    #contact .row-contact {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+    .contact-left {
+        order: 2;
+    }
+    .contact-right {
+        order: 1;
+    }
+
+
+@media screen and (max-width: 890px) {
+    .header-text {
+        margin-top: 200px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 502px) {
+    .header-text {
+        margin-top: 300px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .header-text{
+        margin-top: 250px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .header-text {
+        margin-top: 250px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 25px;
+    }
+}
